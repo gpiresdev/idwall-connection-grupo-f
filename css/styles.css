@@ -151,4 +151,9 @@ header img {
     color: var(--purple-600);  
     pointer-events: none;  
 }
+
+.icon {
+    height: 22px;
+    fill: var(--gray-700);
+}
 /****************** fim header **********************/
