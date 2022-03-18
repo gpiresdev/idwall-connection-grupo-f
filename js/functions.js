@@ -33,7 +33,7 @@ function displayNav(activeLink) {
             page3 = 'link-active';
             dir = '..';
             break
-        case "3":
+        case "4":
             page4 = 'link-active';
             dir = '..';
             break
