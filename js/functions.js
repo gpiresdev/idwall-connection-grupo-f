@@ -14,7 +14,7 @@ function displayIcon(iconName) {
     }
 }
 
-function displayNav(activeLink) {
+function displaySidebar(activeLink) {
     let page0, page1, page2, page3, page4, dir = ''; 
     switch (activeLink) {
         case "0":
@@ -38,23 +38,64 @@ function displayNav(activeLink) {
             dir = '..';
             break
     }
-
     return `
-                <ul> 
-                    <li class="${page0}"><a href="${dir}/index.html">Início</a></li>
-                    <li class="${page1}"><a href="${dir}/pages/func1.html">Usuários</a></li>
-                    <li class="${page2}"><a href="${dir}/pages/func2.html">Monitor</a></li>
-                    <li class="${page3}"><a href="${dir}/pages/func3.html">Pipeline</a></li>
-                    <li class="${page4}"><a href="${dir}/pages/func4.html">Novo relatório</a></li>
-                </ul>
+                <!-- SIDEBAR -->
+                <div class="sidebar position-fixed h-100 d-none d-sm-none d-md-flex col-md-3 flex-column p-0">
+                    <!-- LOGO -->
+                    <div class="logo m-0 d-flex justify-content-center">
+                        <img class="img-fluid" src="${dir}/images/idwalllogo_500x160.png" alt="logo idwall"> 
+                    </div>
+                    <nav class="sidebar-nav">
+                        <ul> 
+                            <li class="${page0}"><a href="${dir}/index.html">Início</a></li>
+                            <li class="${page1}"><a href="${dir}/pages/func1.html">Usuários</a></li>
+                            <li class="${page2}"><a href="${dir}/pages/func2.html">Monitor</a></li>
+                            <li class="${page3}"><a href="${dir}/pages/func3.html">Pipeline</a></li>
+                            <li class="${page4}"><a href="${dir}/pages/func4.html">Novo relatório</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <!-- END SIDEBAR-->
+
+                <!-- TOP BAR -->
+                <div id="topbar" class="topbar topbar-open position-fixed w-100 d-12 d-sm-12 d-md-none d-flex flex-column p-0">
+                    <!-- LOGO -->
+                    <div class="logo d-flex flex-row justify-content-between pe-4">
+                        <img class="img-fluid" src="${dir}/images/idwalllogo_500x160.png" alt="logo idwall">
+                        <i icon="menu" id="menu"></i>
+                    </div>
+                    <!-- NAVIGATION -->
+                    <div class="flex-column">
+                        <nav class="sidebar-nav">
+                            <ul> 
+                                <li class="${page0}"><a href="${dir}/index.html">Início</a></li>
+                                <li class="${page1}"><a href="${dir}/pages/func1.html">Usuários</a></li>
+                                <li class="${page2}"><a href="${dir}/pages/func2.html">Monitor</a></li>
+                                <li class="${page3}"><a href="${dir}/pages/func3.html">Pipeline</a></li>
+                                <li class="${page4}"><a href="${dir}/pages/func4.html">Novo relatório</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <!-- END TOP BAR -->
     `
 }
 
-// GET ALL ELEMENTS WITH ICONS SVG TO BE DISPLAYED
+// DISPLAY NAVIGATION SIDEBAR
+const sidebar = document.querySelectorAll('[sidebar]');
+sidebar.forEach(sidebarElement => {
+    sidebarElement.innerHTML = displaySidebar(sidebarElement.getAttribute('sidebar'));
+});
+
+// SELECT ELEMENTS
 const menu = document.getElementById('menu');
 const icon = document.querySelectorAll('[icon]');
-const nav = document.querySelectorAll('[nav]');
 const topbar = document.getElementById('topbar');
+
+// DISPLAY SVG IMAGES ON ALL ELEMENTS CONTAINING ATTRIBUTE ICON
+icon.forEach(iconImg => {
+    iconImg.innerHTML = displayIcon(iconImg.getAttribute('icon'));
+});
 
 // EXPAND TOPBAR MENU
 menu.onclick = () => {
@@ -64,13 +105,3 @@ menu.onclick = () => {
         topbar.style.height = '60px';
     }
 }
-
-// DISPLAY SVG IMAGES ON ALL ELEMENTS CONTAINING ATTRIBUTE ICON
-icon.forEach(iconImg => {
-    iconImg.innerHTML = displayIcon(iconImg.getAttribute('icon'));
-});
-
-// DISPLAY NAVIGATION MENU
-nav.forEach(navElement => {
-    navElement.innerHTML = displayNav(navElement.getAttribute('nav'));
-});
