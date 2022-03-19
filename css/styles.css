@@ -105,10 +105,6 @@ ul, ol {
     list-style: none;
 }
 
-header img {
-    height: 50px;
-}
-
 #menu {
     color: var(--purple-600);
     margin-top: 8px;
@@ -177,28 +173,25 @@ header img {
     border: none;
 }
 
-.logo img {
+.topbar > .logo img {
     height: 50px;
 }
 /****************** end topbar **********************/
 
-/****************** main **********************/
-.main {
-    margin-left: 25%;
-    transition: .5s;
-}
-
 .icon {
     height: 34px;
 }
-/****************** end main **********************/
+
+@media screen and (min-width: 766px) {
+    main {
+        margin-left: 25%;
+    }
+}
 
 @media screen and (max-width: 766px) {
-    .sidebar {
-        margin-left: -25%;
-    }
-    .main {
-        margin-left: 0%;
+    main {
+        margin-left: 0;
+        padding-top: 60px;
     }
 }
 
