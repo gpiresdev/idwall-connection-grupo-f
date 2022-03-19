@@ -1,0 +1,11 @@
+main {
+    background-color: var(--main-background);
+}
+
+.services-list {
+    padding-left: 0;
+}
+
+.hidden {
+    display: none!important;
+}
