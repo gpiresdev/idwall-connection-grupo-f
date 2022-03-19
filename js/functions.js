@@ -12,6 +12,14 @@ function displayIcon(iconName) {
     if (iconName === 'menu') {
         return `<svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>`
     }
+
+    if (iconName === 'ball') {
+        return `
+        <svg version="1.1" id="circle-11" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11 11">
+            <path d="M10,5.5C10,7.9853,7.9853,10,5.5,10S1,7.9853,1,5.5S3.0147,1,5.5,1S10,3.0147,10,5.5z"/>
+        </svg>
+        `
+    }
 }
 
 function displaySidebar(activeLink) {

@@ -178,6 +178,67 @@ ul, ol {
 }
 /****************** end topbar **********************/
 
+.status {
+    width: 80%;
+    height: 350px;
+    max-width: 800px;
+    background: var(--gray-200);
+    border-radius: 30px;
+    filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
+}
+
+.status ul {
+    padding: 0;
+}
+
+.status p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--gray-700);
+}
+
+.status span {
+    margin-top: -1rem;
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--gray-700);
+}
+
+.status li {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 3rem;
+    color: var(--gray-700);
+}
+
+.header p {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: var(--gray-700);
+}
+
+.numbers li {
+    min-width: 1.5rem;
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--gray-700);
+}
+
+.fill-green {
+    fill: var(--green-500)
+}
+
+.fill-purple {
+    fill: var(--purple-200);
+}
+
+.fill-yellow {
+    fill: var(--yellow-600);
+}
+
 .icon {
     height: 34px;
 }
@@ -193,6 +254,9 @@ ul, ol {
         margin-left: 0;
         padding-top: 60px;
     }
+    .status {
+        width: 95%;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -202,5 +266,17 @@ ul, ol {
 
     .sidebar-nav a:hover {
         font-size: 2.2rem;
+    }
+
+    .sidebar-nav li {
+        padding-top: 2vw;
+        padding-bottom: 2vw;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .sidebar-nav li {
+        padding-top: 30px;
+        padding-bottom: 30px;
     }
 }
