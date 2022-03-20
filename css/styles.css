@@ -239,6 +239,10 @@ ul, ol {
     fill: var(--yellow-600);
 }
 
+.max-width {
+    max-width: 800px;
+}
+
 .icon {
     height: 34px;
 }

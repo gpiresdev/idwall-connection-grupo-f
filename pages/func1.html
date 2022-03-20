@@ -31,7 +31,7 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row"></div>
+        <div class="row">
         <!-- SIDEBAR -->
         <div sidebar="1" class="p-0"></div>
         <!-- MAIN CONTENT -->
@@ -54,7 +54,8 @@
                 </div>
             </div>
 
-            <div class="switch"><script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.5/datatables.min.js"></script>
+            <div class="switch">
+                <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.5/datatables.min.js"></script>
                 <span>LISTAR SOMENTE USUÁRIOS DESATIVADOS</span>
 
                 <label class="switch-label">
@@ -63,7 +64,7 @@
                 </label>
             </div>
 
-            <div class="container p-5">
+            <div class="col-12 p-md-5 p-sm-2 overflow-scroll">
                 <table class="table table-sm table-striped table-hover table-borderless text-center" id="table-protocol">
                     <thead class="table-light">
                         <tr>
@@ -163,11 +164,14 @@
                         </tr>
                     </tbody>
                 </table>
+            </div>
+            <div class="col-12 p-md-5 p-sm-2">
                 <div aria-label="Basic example" id="buttons">
                     <button type="button" class="btn">Adicionar</button>
                     <button type="button" class="btn">Alterar</button>
                     <button type="button" class="btn">Excluir</button>
                 </div>
+            </div>
         </main>
         <!-- END MAIN CONTENT -->
     </div>
