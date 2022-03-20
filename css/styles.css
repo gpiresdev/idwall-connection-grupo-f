@@ -185,6 +185,7 @@ ul, ol {
     background: var(--gray-200);
     border-radius: 30px;
     filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
+    transition: .5s;
 }
 
 .status ul {
@@ -221,10 +222,15 @@ ul, ol {
 
 .numbers li {
     min-width: 1.5rem;
+    margin-right: 1rem;
     font-size: 2rem;
     font-weight: 700;
     text-align: center;
     color: var(--gray-700);
+}
+
+.legend li {
+    font-size: 1.5rem;
 }
 
 .fill-green {
@@ -247,9 +253,25 @@ ul, ol {
     height: 34px;
 }
 
+.circle {
+    max-height: 200px;
+    transition: .5s;
+}
+
 @media screen and (min-width: 766px) {
     main {
         margin-left: 25%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .numbers li {
+        min-width: 1.2rem;
+        font-size: 1.8rem;
+    }
+    
+    .legend li {
+        font-size: 1.2rem;
     }
 }
 
@@ -260,6 +282,25 @@ ul, ol {
     }
     .status {
         width: 95%;
+        height: 300px;
+    }
+
+    .status span {
+        margin-top: -1rem;
+        font-size: 4rem;
+    }
+
+    .circle {
+        max-height: 140px;
+    }
+
+    .numbers li {
+        min-width: 1rem;
+        font-size: 1.5rem;
+    }
+    
+    .legend li {
+        font-size: .8rem;
     }
 }
 
