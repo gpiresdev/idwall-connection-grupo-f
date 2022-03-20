@@ -121,6 +121,7 @@ ul, ol {
 
 .sidebar {
     background-color: var(--purple-400);
+    max-width: 350px;
 }
 
 .sidebar-nav ul {
@@ -251,7 +252,7 @@ ul, ol {
 }
 
 .icon {
-    height: 34px;
+    height: 2.2rem;
 }
 
 .circle {
@@ -260,8 +261,9 @@ ul, ol {
 }
 
 .input-box {
-    border: none;
+    border: solid;
     border-radius: 30px;
+    border-color: var(--gray-300);
     background-color: var(--gray-200);
     padding: 8px;
     padding-right: 25px;
@@ -362,11 +364,11 @@ input {
 
 @media screen and (min-width: 1280px) {
     .sidebar-nav a {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     .sidebar-nav a:hover {
-        font-size: 2.2rem;
+        font-size: 1.9rem;
     }
 
     .sidebar-nav li {

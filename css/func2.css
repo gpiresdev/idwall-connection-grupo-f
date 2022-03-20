@@ -2,10 +2,6 @@ main {
     background-color: var(--main-background);
 }
 
-.services-list {
-    padding-left: 0;
-}
-
 .hidden {
     display: none!important;
 }
@@ -13,4 +9,45 @@ main {
 .accordion-button:not(.collapsed) {
     color: inherit!important;
     background-color: inherit!important;
+}
+
+.link-tabela {
+    color: var(--purple-500);
+}
+
+.link-tabela:hover {
+    color: var(--purple-800);
+}
+
+.form-control:hover, .form-select:hover {
+    background-color: var(--gray-100);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: var(--main-background);
+    border-color: var(--purple-300);
+    box-shadow: 0 0 0 0.25rem var(--purple-50);
+}
+
+.page-item .page-link {
+    color: var(--primary-color);
+    border-color: var(--purple-100)!important;
+}
+
+.page-item.disabled .page-link {
+    color: var(--gray-700);
+    border-color: var(--purple-100)!important;
+}
+
+.page-item.active .page-link {
+    color: #fff;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.page-link:hover {
+    z-index: 2;
+    color: var(--purple-600);
+    background-color: var(--purple-100);
+    border-color: var(--purple-100);
 }
