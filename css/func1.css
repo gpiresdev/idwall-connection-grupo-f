@@ -31,7 +31,8 @@ main h1 {
 .search .input-search button {
     border: none;
     background-color: #E5E5E5;
-    padding: 13px;
+    height: 4rem;
+    padding: 10px;
     color: gray;
     font-size: 15px;
     border-bottom-right-radius: 4px;
