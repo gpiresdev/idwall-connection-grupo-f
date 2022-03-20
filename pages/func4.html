@@ -33,13 +33,9 @@
             <!-- SIDEBAR -->
             <div sidebar="4" class="p-0"></div>
             <!-- MAIN CONTENT -->
-            <main class="d-flex flex-column d-12 col-sm-12 col-md-9 justify-content-center align-items-center">
-                <br>
-                <h1>Novo Relatório</h1>
-                <br>
-
+            <main class="d-flex flex-column d-12 col-sm-12 col-md-9 justify-content-center align-items-center mt-5 p-0">
                 <section class="container-top">
-                    <div class="container-content-top-2">
+                    <div class="container-content-top-2 d-none d-sm-flex">
                         <div class="container-content-top-item">
                             <h3>Selecione uma configuração</h3>
                             <p>Determine como um relatório deve ser validado</p>
@@ -52,7 +48,7 @@
                             <p>Dados cadastrais serão usados para consultas</p>
                         </div>
                     </div>
-                    <div class="container-content-top-2">
+                    <div class="container-content-top-2 d-none d-sm-flex">
                         <div class="container-content-top-item">
                             <h3>Acompanhe os relatórios</h3>
                             <p>Aguarde o processamento do relatório</p>
@@ -60,31 +56,30 @@
                     </div>
                 </section>
 
-                <section class="container-bottom">
-                    <div class="container-content-bottom">
-                        <form action="#">
-                            <h2>Novo relatório</h2>
-                            <br>
-                            <h6>CPF*</h6>
-                            <div class="container-bottom-input">
-                                <input type="number" />
-                            </div>
-                            <h6>Nome completo*</h6>
-                            <div class="container-bottom-input">
-                                <input type="text" />
-                            </div>
-                            <h6>Data nascimento*</h6>
-                            <div class="container-bottom-input">
-                                <input type="date" placeholder="Senha" />
-                            </div>
-                            <div class="container-bottom-input">
+                <div class="container-content-bottom">
+                    <form action="#">
+                        <h2>Novo relatório</h2>
+                        <br>
+                        <h6>CPF*</h6>
+                        <div class="container-bottom-input">
+                            <input type="number" />
+                        </div>
+                        <h6>Nome completo*</h6>
+                        <div class="container-bottom-input">
+                            <input type="text" />
+                        </div>
+                        <h6>Data nascimento*</h6>
+                        <div class="container-bottom-input">
+                            <input type="date" placeholder="Senha" />
+                        </div>
+                        <div class="container-bottom-input" id="container-button">
 
-                                <a href="index.html"><button type="submit">
-                                        Solicitar relatório </button></a>
-                            </div>
-                        </form>
-                    </div>
-                </section>
+                            <a href="index.html">
+                                <button type="submit" class="button">Solicitar relatório</button>
+                            </a>
+                        </div>
+                    </form>
+                </div>
 
             </main>
             <!-- END MAIN CONTENT -->
