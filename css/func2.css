@@ -9,3 +9,8 @@ main {
 .hidden {
     display: none!important;
 }
+
+.accordion-button:not(.collapsed) {
+    color: inherit!important;
+    background-color: inherit!important;
+}
