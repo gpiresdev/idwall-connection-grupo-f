@@ -63,11 +63,13 @@ input {
 .container-content-bottom {
     display: flex;
     flex-direction: column;
-    border-radius: 8px;
     box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
-    margin: 3rem 3rem 3rem 5rem;
-    padding: 20px;
     width: 70%;
+}
+
+.container-content-bottom form {
+    margin: 3rem;
+    padding: 20px;
 }
 
 .container-bottom-input {
@@ -127,11 +129,33 @@ input[type=number] {
 
 @media (max-width: 800px) {
     .container-content-bottom {
-        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         box-shadow: none;
     }
 
     .container-top {
         margin-top: 2.5rem;
+        margin-bottom: 0;
+    }
+
+    .container-content-bottom h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .container-content-bottom span {
+        margin: 1rem;
+    }
+
+    .container-bottom-input input {
+        width: 22rem;
+    }
+    
+    .container-content-bottom form {
+        margin: 0;
+        padding: 0;
     }
 }
