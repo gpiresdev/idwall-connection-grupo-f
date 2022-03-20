@@ -31,6 +31,7 @@
             <div sidebar="3" class="p-0"></div>
             <!-- MAIN CONTENT -->
             <main class="d-flex flex-column col-12 col-sm-12 col-md-9 justify-content-center align-items-center mt-2">
+                <!-- DIV STATUS -->
                 <div class="status mt-5 d-12 col-sm-12 col-md-9 d-flex flex-column justify-content-center align-items-center">
                     <header class="col-12 d-flex flex-row pb-3">
                         <div class="header d-flex col-6 justify-content-center align-items-center text-center">
@@ -41,7 +42,7 @@
                         <div class="d-flex flex-column col-6 justify-content-center align-items-center">
                             <div class="position-absolute"> <img class="img-fluid circle" src="../images/circle.png" alt="Porcentagem"> </div>
                             <p>TOTAL</p>
-                            <span>23</span>
+                            <span data-target="23" class="count">0</span>
                         </div>
                         <div class="d-flex flex-row col-6 justify-content-center align-items-center">
                             <div class="numbers d-flex flex-row col-2 justify-content-end">
@@ -68,6 +69,72 @@
                         </div>
                     </div>
                 </div>
+                <!-- END OF STATUS -->
+                <!-- SECTION PROTOCOLS -->
+                <section class="col-12 max-width mt-5 px-2 px-sm-5 px-md-0">
+                    <!-- SEARCH BOX AND FILTER -->
+                    <div class="d-flex flex-column flex-sm-row flex-md-row pe-0 pe-sm-2 pe-md-3">
+                        <div class="col-12 col-sm-7 col-md-7 input-box d-flex flex-row mt-3 me-0 me-sm-2 me-md-2">
+                            <input class="w-100" type="text">
+                            <i icon="search"></i>
+                        </div>
+                        <!-- FILTRO -->
+                        <div class="col-12 col-sm-5 col-md-5 input-box d-flex flex-row mt-3 ms-0 ms-sm-2 ms-md-2">
+                            <div class="btn-group">
+                                <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Filtro
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Tudo ok</a></li>
+                                  <li><a class="dropdown-item" href="#">Processando</a></li>
+                                  <li><a class="dropdown-item" href="#">Devem ser revisados</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Todos</a></li>
+                                </ul>
+                              </div>
+                        </div>
+                        <!-- END SEARCH BOX AND FILTER -->
+                    </div>
+                    <!-- TABLE PROTOCOLS -->
+                    <div class="overflow-auto">
+                        <table class="table table-hover mt-4">
+                            <thead>
+                                <tr>
+                                  <th scope="col">última atualização</th>
+                                  <th scope="col">nº de relatórios</th>
+                                  <th scope="col">CPF / CNPJ</th>
+                                  <th scope="col">Nome / Razão social</th>
+                                  <th scope="col" class="text-center">Resultado</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>14/02/2022 14:20</td>
+                                  <td>2</td>
+                                  <td>00.000.000/000-00</td>
+                                  <td>NOME DESCONHECIDO</td>
+                                  <td> <div class="btn-status">Revisar</div></td>
+                                </tr>
+                                <tr>
+                                  <td>14/02/2022 14:20</td>
+                                  <td>2</td>
+                                  <td>00.000.000/000-00</td>
+                                  <td>NOME DESCONHECIDO</td>
+                                  <td> <div class="btn-status">Revisar</div></td>
+                                </tr>
+                                <tr>
+                                  <td>14/02/2022 14:20</td>
+                                  <td>2</td>
+                                  <td>00.000.000/000-00</td>
+                                  <td>NOME DESCONHECIDO</td>
+                                  <td> <div class="btn-status">Revisar</div></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- END OF TABLE PROTOCOLS -->
+                </section>
+                <!-- END OF SECTION PROTOCOLS -->
             </main>
             <!-- END MAIN CONTENT -->
         </div>

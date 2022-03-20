@@ -113,3 +113,22 @@ menu.onclick = () => {
         topbar.style.height = '60px';
     }
 }
+
+/* ANIMATION NUMBER COUNTING */
+const counters = document.querySelectorAll(".count");
+counters.forEach((counter) => {
+    const updateCount = () => {
+        const target = parseInt(+counter.getAttribute("data-target"));
+        const count = parseInt(+counter.innerText);
+        const increment = Math.trunc(1);
+        console.log(increment);
+
+        if (count < target) {
+        counter.innerText = (count + increment);
+        setTimeout(updateCount, 70);
+        } else {
+        count.innerText = target;
+        }
+    };
+    updateCount();
+});

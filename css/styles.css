@@ -179,9 +179,9 @@ ul, ol {
 /****************** end topbar **********************/
 
 .status {
-    width: 80%;
+    width: 100%;
     height: 350px;
-    max-width: 800px;
+    max-width: 650px;
     background: var(--gray-200);
     border-radius: 30px;
     filter: drop-shadow(0px 4px 12px rgba(0, 0, 0, 0.25));
@@ -211,6 +211,7 @@ ul, ol {
     font-weight: 400;
     line-height: 3rem;
     color: var(--gray-700);
+    transition: .5s;
 }
 
 .header p {
@@ -246,7 +247,7 @@ ul, ol {
 }
 
 .max-width {
-    max-width: 800px;
+    max-width: 900px;
 }
 
 .icon {
@@ -256,6 +257,61 @@ ul, ol {
 .circle {
     max-height: 200px;
     transition: .5s;
+}
+
+.input-box {
+    border: none;
+    border-radius: 30px;
+    background-color: var(--gray-200);
+    padding: 8px;
+    padding-right: 25px;
+    fill: var(--gray-500);
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: var(--gray-800);
+}
+
+.table {
+    white-space: nowrap;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    line-height: 3rem;
+    background-color: var(--gray-200);
+}
+
+.table tr:hover {
+    cursor: pointer;
+}
+
+.table thead tr:hover {
+    cursor:default;
+}
+
+.btn-status {
+    margin-top: .4rem;
+    line-height: 2rem;
+    font-size: 1rem;
+    border: solid;
+    border-radius: 30px;
+    text-align: center;
+    color: var(--yellow-700);
+    background-color: var(--yellow-100);
+    border-color: var(--yellow-500);
+}
+
+.btn-status:hover {
+    cursor: pointer;
+    color: var(--yellow-700);
+    background-color: var(--yellow-400);
+    border-color: var(--yellow-500);
 }
 
 @media screen and (min-width: 766px) {
