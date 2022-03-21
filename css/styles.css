@@ -116,7 +116,6 @@ ul, ol {
     padding-top: 2rem;
     padding-bottom: 2rem;
     background-color: var(--gray-50);
-    border-bottom: 0.5px solid var(--purple-400);
 }
 
 .sidebar {

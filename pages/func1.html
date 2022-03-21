@@ -73,34 +73,37 @@
         <!-- END TOP BAR -->
 
         <!-- MAIN CONTENT -->
-        <main class="d-flex flex-column d-12 col-sm-12 col-md-9 justify-content-center align-items-center">
-            <h1>Usuários</h1>
-            <!-- SEARCH BOX -->
-            <div class="search">
-                <div class="input-search">
-                    <input type="text" placeholder="Filtro">
+        <main class="d-flex flex-column col-12 col-sm-12 col-md-9 justify-content-center align-items-center mt-5">
+
+            <!-- SECTION FILTER -->
+            <section class="d-flex flex-column col-12 col-sm-12 col-md-9 justify-content-center align-items-center max-width">
+                <!-- SEARCH BOX -->
+                <div class="search">
+                    <div class="input-search">
+                        <input type="text" placeholder="Filtro">
+                        <div>
+                            <button>
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
                     <div>
-                        <button>
-                            <i class="fa fa-search"></i>
-                        </button>
+                        <button class="list">Listar</button>
                     </div>
                 </div>
-                <div>
-                    <button class="list">Listar</button>
+                <!-- SWITCH FILTER -->
+                <div class="switch">
+                    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.5/datatables.min.js"></script>
+                    <span>LISTAR SOMENTE USUÁRIOS DESATIVADOS</span>
+    
+                    <label class="switch-label">
+                        <input type="checkbox" checked>
+                        <span class="slider round"></span>
+                    </label>
                 </div>
-            </div>
+            </section>
 
-            <div class="switch">
-                <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.5/datatables.min.js"></script>
-                <span>LISTAR SOMENTE USUÁRIOS DESATIVADOS</span>
-
-                <label class="switch-label">
-                    <input type="checkbox" checked>
-                    <span class="slider round"></span>
-                </label>
-            </div>
-
-            <div class="col-12 p-md-5 p-sm-2 overflow-auto">
+            <div class="col-12 p-md-5 p-sm-2 overflow-auto max-width">
                 <table class="table table-sm table-striped table-hover table-borderless text-center" id="table-protocol">
                     <thead class="table-light">
                         <tr>

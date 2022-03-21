@@ -40,7 +40,7 @@ main {
 }
 
 .page-item.active .page-link {
-    color: #fff;
+    color: var(--gray-100);
     background-color: var(--primary-color);
     border-color: var(--primary-color);
 }

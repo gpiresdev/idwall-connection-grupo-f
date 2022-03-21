@@ -69,8 +69,10 @@
             <!-- END TOP BAR -->            
 
             <!-- MAIN CONTENT -->
-            <main class="d-flex flex-column d-12 col-sm-12 col-md-9 justify-content-center align-items-center">
-                <div class="accordion p-5 w-100" id="accordionExample">
+            <main class="d-flex flex-column col-12 col-sm-12 col-md-9 justify-content-center align-items-center">
+                <div class="accordion p-5 w-100 max-width mt-5" id="accordionExample">
+
+                    <!-- STATUS -->
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingOne">
                         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -105,7 +107,7 @@
                                 </div>
                             </div>
                             <div class="row d-flex justify-content-start">
-                                <button id="btn-filter-status" type="button" class="btn btn-link mt-3 w-auto">
+                                <button id="btn-filter-status" type="button" class="btn mt-3 w-auto">
                                     Mostrar/Esconder offline
                                     <span id="offline-badge" class="mx-1 badge bg-secondary"></span>
                                 </button>
@@ -113,14 +115,16 @@
                         </div>
                       </div>
                     </div>
+                    <!-- END STATUS -->
 
+                    <!-- PROTOCOLOS -->
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingTwo">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                             <h1 class="fw-light fs-1">Protocolos</h1>
                         </button>
                       </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                      <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
                         <div class="accordion-body">
                             <table id="table-protocol" class="table table-striped">
                                 <thead>
@@ -227,15 +231,16 @@
                         </div>
                       </div>
                     </div>
+                    <!-- END PROTOCOLOS -->
 
-
+                    <!-- CONSULTAS E ANÁLISES -->
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="headingThree">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                           <h1 class="fw-light fs-1">Consultas e Análises</h1>
                         </button>
                       </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                      <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree">
                         <div class="accordion-body">
                           <table id="table-analysis" class="table table-striped">
                             <thead>
@@ -328,6 +333,7 @@
                         </div>
                       </div>
                     </div>
+                    <!-- END CONSULTAS E ANÁLISES -->
                 </div>
             </main>
             <!-- END MAIN CONTENT -->
