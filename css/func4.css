@@ -13,13 +13,20 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: -5px;
     padding: 5px;
 }
 
 .container-content-top {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
+    padding: 8px;
+    border-color: #d9d9d9;
+    border-style: solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     border-bottom-color: #50f;
     border-bottom-style: solid;
     border-bottom-width: 2px;
@@ -28,7 +35,14 @@ input {
 
 .container-content-top-2 {
     display: flex;
+    flex-direction: column;
+    text-align: center;
     align-items: center;
+    border-color: #d9d9d9;
+    border-style: solid;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 5px;
     opacity: 0.50;
     cursor: pointer;
     border-bottom-style: solid;
@@ -50,7 +64,6 @@ input {
     margin: 0;
 }
 
-
 .container-bottom {
     width: 100%;
     display: flex;
@@ -63,8 +76,22 @@ input {
 .container-content-bottom {
     display: flex;
     flex-direction: column;
-    box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: transparent;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 70%;
+}
+
+.container-content-bottom span {
+    margin: 1rem;
+}
+
+.container-content-bottom h2 {
+    color: #262626;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: 0rem;
 }
 
 .container-content-bottom form {
@@ -94,7 +121,6 @@ input {
     outline: none;
     border-color: #50f;
 }
-
 
 .container-bottom-input button {
     border: none;
@@ -127,9 +153,17 @@ input[type=number] {
    appearance: textfield;
 }
 
+@media (max-width: 1199px) {
+    .container-content-top-2 {
+        min-height: 11rem;
+    }
+    .container-content-top {
+        min-height: 11rem;
+    }
+}
+
 @media (max-width: 800px) {
     .container-content-bottom {
-        display: flex;
         align-items: center;
         justify-content: center;
         box-shadow: none;
@@ -140,14 +174,17 @@ input[type=number] {
         margin-bottom: 0;
     }
 
+    .container-content-top {
+        min-height: auto;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
     .container-content-bottom h2 {
         text-align: center;
         margin-bottom: 2rem;
         margin-top: 2rem;
-    }
-
-    .container-content-bottom span {
-        margin: 1rem;
     }
 
     .container-bottom-input input {

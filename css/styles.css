@@ -121,7 +121,6 @@ ul, ol {
 
 .sidebar {
     background-color: var(--purple-400);
-    max-width: 350px;
 }
 
 .sidebar-nav ul {
@@ -139,11 +138,6 @@ ul, ol {
 .sidebar-nav a {
     font-size: 1.5rem;
     font-weight: 200;
-    transition: .3s;
-}
-
-.sidebar-nav a:hover {
-    font-size: 1.7rem;
 }
 
 .link-active {
@@ -365,10 +359,6 @@ input {
 @media screen and (min-width: 1280px) {
     .sidebar-nav a {
         font-size: 1.7rem;
-    }
-
-    .sidebar-nav a:hover {
-        font-size: 1.9rem;
     }
 
     .sidebar-nav li {

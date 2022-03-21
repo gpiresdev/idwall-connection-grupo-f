@@ -29,7 +29,45 @@
     <div class="container-fluid">
         <div class="row">
             <!-- SIDEBAR -->
-            <div sidebar="2" class="p-0"></div>
+            <div class="sidebar position-fixed h-100 d-none d-sm-none d-md-flex col-md-3 flex-column p-0">
+                <!-- LOGO -->
+                <div class="logo m-0 d-flex justify-content-center">
+                    <img class="img-fluid" src="../images/idwalllogo_500x160.png" alt="logo idwall">
+                </div>
+                <nav class="sidebar-nav">
+                    <ul> 
+                        <li class=""><a href="../index.html">Início</a></li>
+                        <li class=""><a href="../pages/func1.html">Usuários</a></li>
+                        <li class="link-active"><a href="../pages/func2.html">Monitor</a></li>
+                        <li class=""><a href="../pages/func3.html">Pipeline</a></li>
+                        <li class=""><a href="../pages/func4.html">Novo relatório</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- END SIDEBAR-->
+
+            <!-- TOP BAR -->
+            <div id="topbar" class="topbar topbar-open position-fixed w-100 d-12 d-sm-12 d-md-none d-flex flex-column p-0">
+                <!-- LOGO -->
+                <div class="logo d-flex flex-row justify-content-between pe-4">
+                    <img class="img-fluid" src="../images/idwalllogo_500x160.png" alt="logo idwall">
+                    <i icon="menu" id="menu"></i>
+                </div>
+                <!-- NAVIGATION -->
+                <div class="flex-column">
+                    <nav class="sidebar-nav">
+                        <ul> 
+                            <li class=""><a href="../index.html">Início</a></li>
+                            <li class=""><a href="../pages/func1.html">Usuários</a></li>
+                            <li class="link-active"><a href="../pages/func2.html">Monitor</a></li>
+                            <li class=""><a href="../pages/func3.html">Pipeline</a></li>
+                            <li class=""><a href="../pages/func4.html">Novo relatório</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- END TOP BAR -->            
+
             <!-- MAIN CONTENT -->
             <main class="d-flex flex-column d-12 col-sm-12 col-md-9 justify-content-center align-items-center">
                 <div class="accordion p-5 w-100" id="accordionExample">

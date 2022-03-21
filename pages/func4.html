@@ -31,33 +31,76 @@
     <div class="container-fluid">
         <div class="row">
             <!-- SIDEBAR -->
-            <div sidebar="4" class="p-0"></div>
+            <div class="sidebar position-fixed h-100 d-none d-sm-none d-md-flex col-md-3 flex-column p-0">
+                <!-- LOGO -->
+                <div class="logo m-0 d-flex justify-content-center">
+                    <img class="img-fluid" src="../images/idwalllogo_500x160.png" alt="logo idwall">
+                </div>
+                <nav class="sidebar-nav">
+                    <ul> 
+                        <li class=""><a href="../index.html">Início</a></li>
+                        <li class=""><a href="../pages/func1.html">Usuários</a></li>
+                        <li class=""><a href="../pages/func2.html">Monitor</a></li>
+                        <li class=""><a href="../pages/func3.html">Pipeline</a></li>
+                        <li class="link-active"><a href="../pages/func4.html">Novo relatório</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- END SIDEBAR-->
+
+            <!-- TOP BAR -->
+            <div id="topbar" class="topbar topbar-open position-fixed w-100 d-12 d-sm-12 d-md-none d-flex flex-column p-0">
+                <!-- LOGO -->
+                <div class="logo d-flex flex-row justify-content-between pe-4">
+                    <img class="img-fluid" src="../images/idwalllogo_500x160.png" alt="logo idwall">
+                    <i icon="menu" id="menu"></i>
+                </div>
+                <!-- NAVIGATION -->
+                <div class="flex-column">
+                    <nav class="sidebar-nav">
+                        <ul> 
+                            <li class=""><a href="../index.html">Início</a></li>
+                            <li class=""><a href="../pages/func1.html">Usuários</a></li>
+                            <li class=""><a href="../pages/func2.html">Monitor</a></li>
+                            <li class=""><a href="../pages/func3.html">Pipeline</a></li>
+                            <li class="link-active"><a href="../pages/func4.html">Novo relatório</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- END TOP BAR -->
+
             <!-- MAIN CONTENT -->
             <main class="d-flex flex-column d-12 col-sm-12 col-md-9 justify-content-center align-items-center mt-5 p-0">
+                <!-- SECTION TABS -->
                 <section class="container-top">
                     <div class="container-content-top-2 d-none d-sm-flex">
+                        <i icon="setting"></i>
                         <div class="container-content-top-item">
                             <h3>Selecione uma configuração</h3>
                             <p>Determine como um relatório deve ser validado</p>
                         </div>
                     </div>
                     <div class="container-content-top">
-                        <img height="20px" src="../images/prancheta.png" alt="Porcentagem">
+                        <i icon="data"></i>
                         <div class="container-content-top-item">
                             <h3>Informe os dados</h3>
                             <p>Dados cadastrais serão usados para consultas</p>
                         </div>
                     </div>
                     <div class="container-content-top-2 d-none d-sm-flex">
+                        <i icon="report"></i>
                         <div class="container-content-top-item">
                             <h3>Acompanhe os relatórios</h3>
                             <p>Aguarde o processamento do relatório</p>
                         </div>
                     </div>
                 </section>
+                <!-- END SECTION TABS -->
 
-                <div class="container-content-bottom">
-                    <form action="#">
+                <!-- SECTION FORM -->
+                <section class="container-content-bottom">
+                    <form action="func3.html">
                         <h2>Novo relatório</h2>
                         
                         <span>CPF*</span>
@@ -73,13 +116,11 @@
                             <input type="date" placeholder="Senha" />
                         </div>
                         <div class="container-bottom-input" id="container-button">
-                            <a href="index.html">
-                                <button type="submit" class="button">Solicitar relatório</button>
-                            </a>
+                            <button type="submit" class="button">Solicitar relatório</button>
                         </div>
                     </form>
-                </div>
-
+                </section>
+                <!-- END SECTION FORM -->
             </main>
             <!-- END MAIN CONTENT -->
         </div>
@@ -88,9 +129,7 @@
     <!-- END CONTAINER FLUID -->
 
     <!-- Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"> </script>
     <script src="../js/functions.js"></script>
 </body>
 
