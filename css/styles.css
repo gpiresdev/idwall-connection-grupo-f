@@ -263,6 +263,11 @@ ul, ol {
     fill: var(--gray-500);
 }
 
+.icon-search {
+    fill: var(--gray-500);
+    cursor: pointer;
+}
+
 input {
     border: none;
     background-color: transparent;

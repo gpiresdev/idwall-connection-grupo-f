@@ -32,188 +32,188 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-        <!-- SIDEBAR -->
-        <div class="sidebar position-fixed h-100 d-none d-sm-none d-md-flex col-md-3 flex-column p-0">
-            <!-- LOGO -->
-            <div class="logo m-0 d-flex justify-content-center">
-                <img class="img-fluid" src="../images/idwalllogo_500x160.png" alt="logo idwall">
-            </div>
-            <nav class="sidebar-nav">
-                <ul> 
-                    <li class=""><a href="../index.html">Início</a></li>
-                    <li class="link-active"><a href="../pages/func1.html">Usuários</a></li>
-                    <li class=""><a href="../pages/func2.html">Monitor</a></li>
-                    <li class=""><a href="../pages/func3.html">Pipeline</a></li>
-                    <li class=""><a href="../pages/func4.html">Novo relatório</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!-- END SIDEBAR-->
-
-        <!-- TOP BAR -->
-        <div id="topbar" class="topbar topbar-open position-fixed w-100 d-12 d-sm-12 d-md-none d-flex flex-column p-0">
-            <!-- LOGO -->
-            <div class="logo d-flex flex-row justify-content-between pe-4">
-                <img class="img-fluid" src="../images/idwalllogo_500x160.png" alt="logo idwall">
-                <i icon="menu" id="menu"></i>
-            </div>
-            <!-- NAVIGATION -->
-            <div class="flex-column">
+            <!-- SIDEBAR -->
+            <div class="sidebar position-fixed h-100 d-none d-sm-none d-md-flex col-md-3 flex-column p-0">
+                <!-- LOGO -->
+                <div class="logo m-0 d-flex justify-content-center">
+                    <img class="img-fluid" src="../images/idwalllogo_500x160.png" alt="logo idwall">
+                </div>
+                <!-- NAVIGATION SIDE -->
                 <nav class="sidebar-nav">
                     <ul> 
-                        <li class=""><a href="../index.html">Início</a></li>
+                        <li><a href="../index.html">Início</a></li>
                         <li class="link-active"><a href="../pages/func1.html">Usuários</a></li>
-                        <li class=""><a href="../pages/func2.html">Monitor</a></li>
-                        <li class=""><a href="../pages/func3.html">Pipeline</a></li>
-                        <li class=""><a href="../pages/func4.html">Novo relatório</a></li>
+                        <li><a href="../pages/func2.html">Monitor</a></li>
+                        <li><a href="../pages/func3.html">Pipeline</a></li>
+                        <li><a href="../pages/func4.html">Novo relatório</a></li>
                     </ul>
                 </nav>
             </div>
+            <!-- END SIDEBAR-->
+
+            <!-- TOP BAR NAVIGATION -->
+            <div id="topbar" class="topbar topbar-open position-fixed w-100 d-12 d-sm-12 d-md-none d-flex flex-column p-0">
+                <!-- LOGO -->
+                <div class="logo d-flex flex-row justify-content-between pe-4">
+                    <img class="img-fluid" src="../images/idwalllogo_500x160.png" alt="logo idwall">
+                    <i icon="menu" id="menu"></i>
+                </div>
+                <!-- NAVIGATION TOP -->
+                <div class="flex-column">
+                    <nav class="sidebar-nav">
+                        <ul> 
+                            <li><a href="../index.html">Início</a></li>
+                            <li class="link-active"><a href="../pages/func1.html">Usuários</a></li>
+                            <li><a href="../pages/func2.html">Monitor</a></li>
+                            <li><a href="../pages/func3.html">Pipeline</a></li>
+                            <li><a href="../pages/func4.html">Novo relatório</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <!-- END TOP BAR -->
+
+            <!-- MAIN CONTENT -->
+            <main class="d-flex flex-column col-12 col-sm-12 col-md-9 justify-content-center align-items-center mt-5">
+                <h1 class="mb-4">Usuários</h1>
+                <!-- SECTION FILTER -->
+                <section class="d-flex flex-column col-12 col-sm-12 col-md-9 justify-content-center align-items-center max-width">
+                    <!-- SEARCH BOX -->
+                    <div class="search">
+                        <div class="input-search">
+                            <input type="text" placeholder="Filtro">
+                            <span class="mt-auto">
+                               <i icon="search"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <button class="btn list-btn">Listar</button>
+                        </div>
+                    </div>
+                    <!-- SWITCH FILTER -->
+                    <div class="switch">
+                        <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.5/datatables.min.js"></script>
+                        <span>LISTAR SOMENTE USUÁRIOS DESATIVADOS</span>
+        
+                        <label class="switch-label">
+                            <input type="checkbox" checked>
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </section>
+
+                <!-- SECTION TABLE -->
+                <section class="col-12 p-md-5 p-sm-2 overflow-auto max-width">
+                    <table class="table table-sm table-striped table-hover table-borderless text-center" id="table-users">
+                        <thead class="table-light">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Cliente</th>
+                                <th scope="col">Protocolos</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Acesso</th>
+                                <th scope="col">Backoffice</th>
+                                <th scope="col">IDnetwork</th>
+                                <th scope="col">Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><a class="link-tabela" href="">1024</a></th>
+                                <td><a class="link-tabela" href="">12345</a></td>
+                                <td>0</td>
+                                <td>email@exemplo.com</td>
+                                <td>Sim</td>
+                                <td>Não</td>
+                                <td>Não</td>
+                                <td><button type="button" class="btn btn-personalizado">Logar</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a class="link-tabela" href="">734</a></th>
+                                <td><a class="link-tabela" href="">424231</a></td>
+                                <td>3</td>
+                                <td>email@exemplo.com</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                                <td><button type="button" class="btn btn-personalizado">Logar</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a class="link-tabela" href="">421</a></th>
+                                <td><a class="link-tabela" href="">12222345</a></td>
+                                <td>2</td>
+                                <td>email@exemplo.com</td>
+                                <td>Sim</td>
+                                <td>Não</td>
+                                <td>Não</td>
+                                <td><button type="button" class="btn btn-personalizado">Logar</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a class="link-tabela" href="">332</a></th>
+                                <td><a class="link-tabela" href="">1234445</a></td>
+                                <td>0</td>
+                                <td>email@exemplo.com</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                                <td><button type="button" class="btn btn-personalizado">Logar</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a class="link-tabela" href="">854</a></th>
+                                <td><a class="link-tabela" href="">15532345</a></td>
+                                <td>3</td>
+                                <td>email@exemplo.com</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                                <td>Não</td>
+                                <td><button type="button" class="btn btn-personalizado">Logar</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a class="link-tabela" href="">854</a></th>
+                                <td><a class="link-tabela" href="">15532345</a></td>
+                                <td>3</td>
+                                <td>email@exemplo.com</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                                <td>Não</td>
+                                <td><button type="button" class="btn btn-personalizado">Logar</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a class="link-tabela" href="">854</a></th>
+                                <td><a class="link-tabela" href="">15532345</a></td>
+                                <td>3</td>
+                                <td>email@exemplo.com</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                                <td>Não</td>
+                                <td><button type="button" class="btn btn-personalizado">Logar</button></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><a class="link-tabela" href="">854</a></th>
+                                <td><a class="link-tabela" href="">15532345</a></td>
+                                <td>3</td>
+                                <td>email@exemplo.com</td>
+                                <td>Sim</td>
+                                <td>Sim</td>
+                                <td>Não</td>
+                                <td><button type="button" class="btn btn-personalizado">Logar</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <!-- ACTION BUTTONS -->
+                <div class="col-12 p-md-5 p-sm-2">
+                    <div aria-label="Basic example" id="buttons">
+                        <button type="button" class="btn">Adicionar</button>
+                        <button type="button" class="btn">Alterar</button>
+                        <button type="button" class="btn">Excluir</button>
+                    </div>
+                </div>
+            </main>
+            <!-- END MAIN CONTENT -->
         </div>
-        <!-- END TOP BAR -->
-
-        <!-- MAIN CONTENT -->
-        <main class="d-flex flex-column col-12 col-sm-12 col-md-9 justify-content-center align-items-center mt-5">
-
-            <!-- SECTION FILTER -->
-            <section class="d-flex flex-column col-12 col-sm-12 col-md-9 justify-content-center align-items-center max-width">
-                <!-- SEARCH BOX -->
-                <div class="search">
-                    <div class="input-search">
-                        <input type="text" placeholder="Filtro">
-                        <span class="mt-auto">
-                            <i class="fa fa-search"></i>
-                        </span>
-                    </input>
-                    </div>
-                    <div>
-                        <button class="btn list-btn">Listar</button>
-                    </div>
-                </div>
-                <!-- SWITCH FILTER -->
-                <div class="switch">
-                    <script type="text/javascript" src="https://cdn.datatables.net/v/bs5/jq-3.6.0/dt-1.11.5/datatables.min.js"></script>
-                    <span>LISTAR SOMENTE USUÁRIOS DESATIVADOS</span>
-    
-                    <label class="switch-label">
-                        <input type="checkbox" checked>
-                        <span class="slider round"></span>
-                    </label>
-                </div>
-            </section>
-
-            <div class="col-12 p-md-5 p-sm-2 overflow-auto max-width">
-                <table class="table table-sm table-striped table-hover table-borderless text-center" id="table-users">
-                    <thead class="table-light">
-                        <tr>
-                            <th scope="col">#</th>
-                            <th scope="col">Cliente</th>
-                            <th scope="col">Protocolos</th>
-                            <th scope="col">Email</th>
-                            <th scope="col">Acesso</th>
-                            <th scope="col">Backoffice</th>
-                            <th scope="col">IDnetwork</th>
-                            <th scope="col">Ações</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row"><a class="link-tabela" href="">1024</a></th>
-                            <td><a class="link-tabela" href="">12345</a></td>
-                            <td>0</td>
-                            <td>email@exemplo.com</td>
-                            <td>Sim</td>
-                            <td>Não</td>
-                            <td>Não</td>
-                            <td><button type="button" class="btn btn-personalizado">Logar</button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><a class="link-tabela" href="">734</a></th>
-                            <td><a class="link-tabela" href="">424231</a></td>
-                            <td>3</td>
-                            <td>email@exemplo.com</td>
-                            <td>Sim</td>
-                            <td>Sim</td>
-                            <td>Sim</td>
-                            <td><button type="button" class="btn btn-personalizado">Logar</button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><a class="link-tabela" href="">421</a></th>
-                            <td><a class="link-tabela" href="">12222345</a></td>
-                            <td>2</td>
-                            <td>email@exemplo.com</td>
-                            <td>Sim</td>
-                            <td>Não</td>
-                            <td>Não</td>
-                            <td><button type="button" class="btn btn-personalizado">Logar</button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><a class="link-tabela" href="">332</a></th>
-                            <td><a class="link-tabela" href="">1234445</a></td>
-                            <td>0</td>
-                            <td>email@exemplo.com</td>
-                            <td>Sim</td>
-                            <td>Sim</td>
-                            <td>Sim</td>
-                            <td><button type="button" class="btn btn-personalizado">Logar</button></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><a class="link-tabela" href="">854</a></th>
-                            <td><a class="link-tabela" href="">15532345</a></td>
-                            <td>3</td>
-                            <td>email@exemplo.com</td>
-                            <td>Sim</td>
-                            <td>Sim</td>
-                            <td>Não</td>
-                            <td><button type="button" class="btn btn-personalizado">Logar</button></td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row"><a class="link-tabela" href="">854</a></th>
-                            <td><a class="link-tabela" href="">15532345</a></td>
-                            <td>3</td>
-                            <td>email@exemplo.com</td>
-                            <td>Sim</td>
-                            <td>Sim</td>
-                            <td>Não</td>
-                            <td><button type="button" class="btn btn-personalizado">Logar</button></td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row"><a class="link-tabela" href="">854</a></th>
-                            <td><a class="link-tabela" href="">15532345</a></td>
-                            <td>3</td>
-                            <td>email@exemplo.com</td>
-                            <td>Sim</td>
-                            <td>Sim</td>
-                            <td>Não</td>
-                            <td><button type="button" class="btn btn-personalizado">Logar</button></td>
-                        </tr>
-
-                        <tr>
-                            <th scope="row"><a class="link-tabela" href="">854</a></th>
-                            <td><a class="link-tabela" href="">15532345</a></td>
-                            <td>3</td>
-                            <td>email@exemplo.com</td>
-                            <td>Sim</td>
-                            <td>Sim</td>
-                            <td>Não</td>
-                            <td><button type="button" class="btn btn-personalizado">Logar</button></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-            <div class="col-12 p-md-5 p-sm-2">
-                <div aria-label="Basic example" id="buttons">
-                    <button type="button" class="btn">Adicionar</button>
-                    <button type="button" class="btn">Alterar</button>
-                    <button type="button" class="btn">Excluir</button>
-                </div>
-            </div>
-        </main>
-        <!-- END MAIN CONTENT -->
-    </div>
-    <!-- END ROW -->
+        <!-- END ROW -->
     </div>
     <!-- END CONTAINER FLUID -->
 
